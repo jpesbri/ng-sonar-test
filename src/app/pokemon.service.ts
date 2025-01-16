@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class PokemonService {
-  private apiUrl = 'https://pokeapi.co/api/v2/pokemon';
+  private readonly apiUrl = 'https://pokeapi.co/api/v2/pokemon';
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   getPokemonList(limit: number = 10): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}?limit=${limit}`);
