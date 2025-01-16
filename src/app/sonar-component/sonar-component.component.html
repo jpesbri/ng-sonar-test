@@ -1,1 +1,9 @@
-<p>Sonar Component Hello World</p>
+<h1>Pokémon List</h1>
+@if (pokemonList.length > 0) { @for (pokemon of pokemonList; track $index) {
+<li>{{ pokemon.name }}</li>
+} } @else {
+<ng-template #loading>
+  <p>Loading...</p>
+</ng-template>
+
+}
