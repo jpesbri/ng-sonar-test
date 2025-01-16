@@ -21,5 +21,5 @@ jobs:
       - name: SonarQube Scan
         uses: sonarsource/sonarcloud-github-action@v4.0.0 # Ex: v4.0.0, See the latest version at https://github.com/marketplace/actions/sonarcloud-scan
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_TOKEN: df763c1131aee3f29ee8fe73ceae0915dc60e543
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
